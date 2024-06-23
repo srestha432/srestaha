@@ -1,0 +1,226 @@
+ *{
+    margin: 0;
+    padding: 0;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+
+}
+body{
+    background-color: rgb(236, 188, 223);
+}
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    padding: 1rem 9%;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    z-index: 100;
+    background-color: rgb(255, 139, 239);
+    border: 1rem,black;
+}
+.navbar a{
+    font-size: 1.5rem;
+    color: blue;
+    margin-left: 2rem;
+    font-weight: bold;
+    transition: 1s;
+
+}
+.navbar a:hover{
+    color: rgb(250, 162, 216);
+    
+}
+.home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.home-content{
+    font-size:2.2rem;
+    font-weight:700;
+}
+.home-content h1{
+    font-size: 5.6rem;
+    font-weight:700;
+    line-height:1.3;
+}
+.home-content p{
+    font-size: 1.6rem;
+}
+
+.social-media a{
+    display:inline-flex;
+    justify-content: center;
+    align-items:center;
+    width: 4rem;
+    border-radius: 50%;
+    height: 4rem;
+    background-color: transparent;
+    font-size: 2rem;
+    margin: 2rem 1.5rem 2 rem 0;
+}
+.social-media a:hover{
+
+    color:black;
+}
+.home-content h3:nth-of-type(2){
+    margin-bottom: 2rem;
+}
+span{
+    color:blue;
+
+}
+.btn{
+    display:inline-block;
+    padding: 0.5 rem 1 rem;
+    color:beige;
+    background-color: bisque;
+    border-radius: 5rem;
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+    transition: 0.1 ease;
+}
+.btn:hover{
+    background-color: black;
+    color: aliceblue;
+    box-shadow: 0 0.1rem black;
+}
+.home-img img{
+    width: 20rem;
+    margin-left: 1rem;
+
+}
+section{
+    min-height: 100vh;
+    padding:10rem 9% 2rem;
+}
+.about{
+    display:flex;
+    justify-content: center;
+    gap: 2rem;
+    align-items: center;
+    background-color: white;
+}
+.about-img img{
+    width: 60rem;
+}
+.heading{
+    text-align: center;
+    font-size: 4.5rem;
+
+}
+.about-content h2{
+text-align: left;
+line-height: 1.2;;
+}
+.about-content p{
+    font-size: 1.6rem;
+    color:rgb(235, 131, 226);
+    margin: 2 rem 0 3 rem;
+}
+.services h2{
+    margin:0 0 5rem 0;
+
+}
+.services-container{
+display: flex;
+justify-content: center;
+align-items: center;
+flex-wrap: wrap;
+gap: 1rem;
+}
+.service-box{
+    flex: 1 1 20rem;
+    background-color: rgb(201, 148, 252);
+    padding: 3rem 3rem 4rem;
+    border-radius: 2rem;
+    text-align: center;
+    transition: 0.5s ease-in;
+}
+.service-box:hover{
+    color: pink;
+    border-color: black;
+    background-color: rgb(139, 93, 126);
+    transform: rotate(2deg,2deg);
+}
+.service-box i{
+
+font-size: 5rem;
+color: rgb(246, 150, 255);
+}
+.service-box h3{
+    font-size: 1.6rem;
+
+}
+.service-box p{
+    font-size: 0.9rem;
+    margin: 1rem 0 3rem;
+}
+.portfolio{
+    background-color: bisque;
+
+}
+.portfolio h2{
+    margin-bottom: 4rem;
+}
+.portfolio-conatainer{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);/*we need 3 columns of 1 fraction of space*/
+    gap: 2.5rem;
+    align-items: center;
+}
+.portfolio-box{
+    position: relative;
+    height: 100%;
+    border-radius: 1rem;
+    box-shadow: 0 0 1rem black;
+    overflow: hidden;
+    display: flex;
+}
+.portfolio-box img{
+    width: 100%;
+    transition: 0.5s ease;
+}
+.portfolio-box:hover img{
+    transform: scale(1.1);
+}
+.portfolio-layer{
+    color: azure;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgb(170, 42, 63),rgb(146, 124, 124)) ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 4rem;
+    transform: translateY(100%);
+    transition: 0.5s ease;
+}
+.portfolio-box:hover .portfolio-layer{
+    transform: translateY(0);
+}
+.portfolio-layer h4{
+    font-size: 2rem;
+}
+.portfolio-layer p{
+    font-size: 1rem;
+    margin: 0.3rem 0 1rem;
+}
+.portfolio-layer a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 2rem;
+    height: 2rem;
+    background-color: beige;
+    border-radius: 50%;
+}
